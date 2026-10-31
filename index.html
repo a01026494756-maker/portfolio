@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="수학과 기후환경 포트폴리오의 재사용 컴포넌트 미리보기입니다.">
+  <meta name="robots" content="noindex">
+  <title>수학과 기후환경 | 컴포넌트 미리보기</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./src/styles/base.css">
+  <link rel="stylesheet" href="./src/styles/components.css">
+  <script type="module" src="./src/demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <pf-site-header></pf-site-header>
+  <main id="main" tabindex="-1">
+    <pf-hero></pf-hero>
+    <pf-learning-steps></pf-learning-steps>
+    <pf-profile id="about"></pf-profile>
+    <section id="works" class="section container" aria-labelledby="works-title">
+      <div class="section-heading"><div><p class="eyebrow">수학과 환경을 잇는 탐구</p><h2 id="works-title">궁금한 주제부터 탐구해 보세요</h2><p>화면 구성을 위한 예시 자료입니다. 실제 연구 실적이 아닙니다.</p></div><a class="text-link" href="#component-gallery">컴포넌트 살펴보기 →</a></div>
+      <pf-work-grid id="portfolio-grid"></pf-work-grid>
+    </section>
+    <section id="component-gallery" class="section container" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow">디자인 시스템</p><h2 id="gallery-title">컴포넌트 모아보기</h2><p>버튼, 배지, 안내, 다운로드와 빈 상태를 직접 확인할 수 있습니다.</p></div></div>
+      <div class="gallery-stack">
+        <div class="surface-panel"><h3>버튼과 배지</h3><div class="control-gallery"><pf-button label="작업물 보기 →" href="#works"></pf-button><pf-button label="자기소개 보기" variant="secondary" href="#about"></pf-button><pf-button label="작은 버튼" size="small" href="#usage"></pf-button><pf-button label="비활성 버튼" disabled></pf-button></div><div class="tag-list"><pf-badge label="프로젝트" tone="project"></pf-badge><pf-badge label="수업 자료" tone="lesson"></pf-badge><pf-badge label="수학적 모델링"></pf-badge></div></div>
+        <pf-notice heading="개념을 이해하기 위한 예시입니다" description="실제 관측 데이터와 설명을 위한 도표를 구분해서 보여 줍니다."></pf-notice>
+        <pf-notice tone="warning" heading="모델의 한계도 함께 읽어 주세요" description="단순한 관계가 모든 원인을 설명하지는 않습니다. 데이터의 범위와 가정을 함께 확인합니다."></pf-notice>
+        <pf-notice tone="error" heading="오류 안내 스타일 예시" description="자료를 열지 못했을 때 보여 줄 안내입니다. 현재 실제 오류가 발생한 것은 아닙니다."></pf-notice>
+        <pf-empty-state heading="아직 등록된 자료가 없습니다." description="선택한 분류에 자료가 없을 때 보여 주는 화면입니다." action-label="작업물 보기" action-href="#works"></pf-empty-state>
+      </div>
+    </section>
+    <section id="usage" class="section container" aria-labelledby="usage-title">
+      <div class="section-heading"><div><h2 id="usage-title">자료 이용 안내와 다운로드</h2><p>컴포넌트 동작을 확인할 수 있도록 실제 기획 문서를 연결했습니다.</p></div></div>
+      <pf-download-panel id="document-downloads"></pf-download-panel>
+      <pf-notice id="download-error" hidden tone="error" heading="문서를 불러오지 못했습니다" description="로컬 서버에서 실행하고 문서 파일이 있는지 확인해 주세요."></pf-notice>
+    </section>
+  </main>
+  <pf-site-footer></pf-site-footer>
+  <dialog id="work-preview" class="dialog" aria-labelledby="preview-title">
+    <div class="dialog-heading"><div><p class="eyebrow">작업물 카드 동작 미리보기</p><h2 id="preview-title"></h2></div><button class="dialog-close" type="button" aria-label="미리보기 닫기">닫기</button></div>
+    <p class="preview-description"></p>
+    <pf-work-chart></pf-work-chart>
+    <pf-notice heading="화면 구성을 위한 예시입니다" description="이 창은 카드의 연결 동작을 확인하는 미리보기입니다. 실제 작업물 상세 페이지와 수업 자료는 추후 콘텐츠를 준비해 연결합니다."></pf-notice>
+  </dialog>
+  <noscript><p class="container">컴포넌트 미리보기에는 자바스크립트가 필요합니다.</p></noscript>
+</body>
+</html>
