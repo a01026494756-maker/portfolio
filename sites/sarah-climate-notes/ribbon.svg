@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="820" viewBox="0 0 800 820" fill="none">
+<defs>
+<linearGradient id="body" x1="190" y1="100" x2="700" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#0b0f08"/><stop offset=".18" stop-color="#546746"/><stop offset=".3" stop-color="#10170c"/><stop offset=".48" stop-color="#a3cb66"/><stop offset=".53" stop-color="#d6f0a9"/><stop offset=".56" stop-color="#344723"/><stop offset=".72" stop-color="#111a09"/><stop offset=".9" stop-color="#6e9d20"/><stop offset="1" stop-color="#c8ff43"/></linearGradient>
+<linearGradient id="inner" x1="490" y1="200" x2="230" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#0c110b"/><stop offset=".3" stop-color="#172210"/><stop offset=".56" stop-color="#83ae39"/><stop offset=".64" stop-color="#c9ff48"/><stop offset=".7" stop-color="#59741e"/><stop offset="1" stop-color="#0c1308"/></linearGradient>
+<linearGradient id="edge" x1="220" y1="125" x2="600" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#d0fd6c"/><stop offset=".3" stop-color="#67725e"/><stop offset=".55" stop-color="#e5ffbe"/><stop offset=".8" stop-color="#a4e339"/><stop offset="1" stop-color="#223116"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#9cff22" stop-opacity=".12"/><stop offset="1" stop-color="#9cff22" stop-opacity="0"/></radialGradient>
+<linearGradient id="sheen" x1="360" y1="220" x2="570" y2="410"><stop stop-color="#eaf4df" stop-opacity=".65"/><stop offset="1" stop-color="#f4fff1" stop-opacity="0"/></linearGradient>
+</defs>
+<ellipse cx="465" cy="440" rx="330" ry="350" fill="url(#glow)"/>
+<path d="M738 102C588 8 412 35 314 166C229 280 266 398 432 444C577 485 636 514 601 608C576 676 493 729 381 771C567 742 737 672 759 538C783 394 630 361 474 332C347 308 328 257 371 202C442 112 615 116 738 102Z" fill="url(#body)" stroke="url(#edge)" stroke-width="1.4"/>
+<path d="M738 102C571 76 398 145 366 230C338 305 430 328 528 351C686 388 771 448 744 555C718 655 577 741 381 771C489 699 502 587 437 519C369 448 199 448 186 333C176 241 251 143 314 166C274 276 312 337 432 370C559 405 625 434 623 503C621 597 511 705 381 771" fill="url(#inner)" stroke="url(#edge)" stroke-width="1"/>
+<path d="M314 166C248 287 295 355 432 393C557 427 639 433 623 503C595 431 468 445 358 404C248 363 240 257 314 166Z" fill="url(#sheen)"/>
+<path d="M738 102C598 18 423 36 328 148" stroke="#ceff63" stroke-width="2" stroke-linecap="round"/>
+<path d="M186 333C194 429 338 447 415 499C513 565 500 680 381 771" stroke="#d4f2a8" stroke-opacity=".65" stroke-width="1.5"/>
+<path d="M474 332C624 359 782 393 759 538" stroke="#e7f6d2" stroke-opacity=".5" stroke-width="1"/>
+</svg>

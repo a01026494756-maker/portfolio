@@ -1,0 +1,1 @@
+{"name":"sarah-climate-portfolio","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs","dev":"node build.mjs && node server.mjs","start":"node server.mjs"}}
